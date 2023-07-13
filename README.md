@@ -1,27 +1,47 @@
-# technical-assignment-
-- **Here is repo from swypt web3 company that contains a take away assignment with instructions**
+## Getting Started
 
-**Thank you for showing some intrest in swypt 🎉🎉: We would love to onboard you with the following task**
+Create a project using this example:
 
-- INSTRUCTIONS:
+```bash
+npx thirdweb create --contract --template hardhat-javascript-starter
+```
 
-1. Clone this project and create your own branch where you will be pushing to 
-2. create a simple dapp with a user interface using Nextjs or React which will have the following:
- - an input field where a user will enter recipient `address` to send some eth to
- - an input field where a user will enter the `amount` in eth to send to
- - a button `send` which when clicked opens up metamask to sign and send the transaction
-3. The dapp will have metamask connect feature
-   -upon landing on the dapp a user should be prompted to connect to metamask
-4. Upon sending the transaction a user should be able to see the logs displayed on the dapp  i.e
- - `from`  the address of person who sent the transaction
- - `to`  the address recipient of the amount sent by connected metamask user
- - `amount` the amount in eth that was sent to recipient
+You can start editing the page by modifying `contracts/Contract.sol`.
 
--Huraays!!!! 🤖🤖🤖🤖 you finally did it champ.
+To add functionality to your contracts, you can use the `@thirdweb-dev/contracts` package which provides base contracts and extensions to inherit. The package is already installed with this project. Head to our [Contracts Extensions Docs](https://portal.thirdweb.com/contractkit) to learn more.
 
-**Next steps will be submiting the project for reviews**
+## Building the project
 
--Here are some useful docs that can help you with the following tasks
-- https://docs.alchemy.com/docs/how-to-send-transactions-on-ethereum
-- https://docs.moralis.io/web3-data-api/evm/how-to-get-all-erc20-transfers-by-wallet
-- https://docs.walletconnect.com/2.0/web/web3modal/react/wagmi/installation
+After any changes to the contract, run:
+
+```bash
+npm run build
+# or
+yarn build
+```
+
+to compile your contracts. This will also detect the [Contracts Extensions Docs](https://portal.thirdweb.com/contractkit) detected on your contract.
+
+## Deploying Contracts
+
+When you're ready to deploy your contracts, just run one of the following command to deploy you're contracts:
+
+```bash
+npm run deploy
+# or
+yarn deploy
+```
+
+## Releasing Contracts
+
+If you want to release a version of your contracts publicly, you can use one of the followings command:
+
+```bash
+npm run release
+# or
+yarn release
+```
+
+## Join our Discord!
+
+For any questions, suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
